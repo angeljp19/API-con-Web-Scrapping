@@ -1,4 +1,10 @@
 ## Web Scrapping
+__Tecnologias y herramientes utilizadas:__
+  -  Python
+  -  Flask
+  -  Selenium
+  -  Mongodb
+
 Este app utiliza Selenium para escrapear datos de pares de divisa en TradingView. De manera repetitiva cada 5 segundos carga las direcciones en la lista de 'urls', donde extrae los datos:
   -  Nombre
   -  Simbolo
@@ -7,21 +13,7 @@ Este app utiliza Selenium para escrapear datos de pares de divisa en TradingView
   -  Volumen
   -  Rango del dia
 
-Luego de crear un arreglo con todos los datos los inserta en una base de datos de MongoDB, de manera organizada cada registro es guardado en su coleccion correspondiente. Los pares de divisas disponibles son:
-
-  -  EUR/USD
-  -  EUR/JPY
-  -  EUR/GBP
-  -  USD/JPY
-  -  GBP/USD
-  -  AUD/USD
-  -  AUD/JPY
-  -  AUD/CAD
-  -  GBP/JPY
-  -  USD/CHF
-  -  NZD/USD
-  -  CAD/CHF
-  -  USD/CAD
+Luego de crear un arreglo con todos los datos los inserta en una base de datos de MongoDB, de manera organizada cada registro es guardado en su coleccion correspondiente
 
 ## API
 Con el archivo 'main.py' se ejecuta un servidor de flask para habilitar la API que servira los datos del par de divisa solicitado que debe especificarse de la siguiente manera:
